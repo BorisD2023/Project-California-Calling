@@ -1,0 +1,440 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "fonts.scss";
+@import "animation.scss";
+
+*{
+    @include star;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// ================= General Style ====================/
+
+img{
+    max-width: 100%;
+}
+
+a{
+    @include a-tag;
+}
+
+h1{
+    
+    font-size: $fontH1;
+    font-weight: $fontW;
+    font-family: "lora", Arial, Helvetica, sans-serif;
+    span{
+        @include textStrocke1;
+    }
+}
+
+h2{
+    font-size: $fontH2;
+    font-weight: $fontW;
+    font-family: lora, Arial, Helvetica, sans-serif;
+}
+
+h5{
+    font-weight: $fontW;
+    @include fontSizeFamily;
+}
+
+p{
+    @include fontSizeFamily;
+}
+
+// /=============== Header Section ===============/
+
+header{
+    background: url(../img/line.svg) no-repeat center;
+    background-size: cover;
+    background-color: $secondColor;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    section:nth-child(1){
+        @include displayFlex1;
+        height: 40rem;
+        color: $mainColor;
+        margin: 0 10rem;
+        line-height: 7rem;
+        
+    }
+
+    section:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10rem;
+
+        & a:hover{
+            @include btnHover;
+        }
+    }
+}
+
+//======== Last-Year Section ============/
+
+.last-year{
+    min-height: 120rem;
+    background-color: $secondColor;
+    color: $mainColor;
+    position: relative;
+
+    article:nth-child(1){
+        margin: 0 10rem;
+        padding-top: 7rem;
+        width: 55rem;
+
+        p{
+            font-size: 5rem;
+            font-weight: $fontW;
+            font-family: lora, Arial, Helvetica, sans-serif ;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    
+    article:nth-child(2){
+        margin: 0 10rem;
+        padding-top: 6rem;
+
+        .california-text{
+            line-height: 6rem;
+            margin-bottom: 5rem;
+            
+            p{
+            font-size: $fontH5;
+            }
+        }
+    }
+
+    article:nth-child(3){
+        img{
+        position: absolute;
+        max-width: 52%;
+        right: 1%;
+        top: 34%;
+        }
+    }
+}
+
+// ========== Stuck in the Middle Sextion ==========/
+
+.stuck{
+    min-height: 100vh;
+    margin-bottom: 10rem;
+    
+    article:nth-child(1){
+        @include displayGrid3;
+
+        img{
+            width: 75%;
+            grid-column: 3;
+            margin: -9rem 0 0 -10rem;
+            z-index: 1;
+        }
+    }
+
+    article:nth-child(2){
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1.3fr 4fr 1.3fr;
+        margin-bottom: 10rem;
+
+        .action2{
+            place-self: start;
+            margin: 4rem 0 0 3rem;
+        }
+
+        .action3{
+            place-self: end;
+            margin: 0 0 8rem 0;
+        }
+
+        .text-middle{
+            place-self: center;
+            width: 42vw;
+            h1{
+                line-height: 8rem;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                line-height: 2.5rem;
+                font-weight: $fontW;
+            }
+        }
+    }   
+
+    article:nth-child(3){
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 20rem;
+        margin: 0 15rem;
+        height: 35vh;
+        margin-bottom: 15rem;
+
+        img:nth-child(1){
+            place-self: start;
+        }
+
+        img:nth-child(2){
+            place-self: end;
+        }
+    }
+
+    article:nth-child(4){
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 15rem;
+        height: 27vh;
+    
+        div{
+            display: grid;
+            width: 40vw;
+            line-height: 2.5rem;
+            font-weight: $fontW;
+
+            p{
+                place-self: end;
+            }
+        }
+
+        img{
+            place-self: start;
+        }
+    }
+
+    article:nth-child(5){
+        @include displayGrid3;
+    
+
+        img{
+            width: 75%;
+            grid-column: 3;
+            margin: 9rem 0 0 -10rem;
+            z-index: 1;
+        }
+    }
+}
+
+// ====== Golden Bear Section ========/
+
+.golden-bear{
+    background-color: $secondColor;
+    min-height: 100vh;
+    margin-bottom: 10rem;
+
+    article:nth-child(1){
+        @include displayGrid2;
+        gap: 10rem;
+        height: 70vh;
+        color: $mainColor;
+        margin: 0 10rem 10rem 10rem;
+        
+        div:nth-child(2){
+            margin: 0 0 -3rem 0;
+        }
+        
+        div{
+            place-self: end;
+
+            p{
+                font-size: $fontP;
+                font-family: lora,Arial, Helvetica, sans-serif;
+                line-height: 3rem;
+            }
+
+            h1{
+                padding-top: 3rem;
+                line-height: 6.5rem;
+            }
+            
+            h5{
+                padding-top: 3rem;
+            }
+        }
+    }
+
+    article:nth-child(2){
+        @include displayGrid1;
+        height: 57vh;
+       
+
+        .bear1{
+            margin: 2rem 0 0 15rem;
+        }
+
+        .bear2{
+            justify-self: start;
+            align-self: flex-end;
+            width: 55%;
+            margin: 0 0 5rem 7rem;
+            z-index: 1;
+        }
+    }
+}   
+
+// =========== Poppy Bear Section =========/
+
+
+.poppy-bear{
+    min-height: 100vh;
+    margin-bottom: 6rem;
+    
+    article:nth-child(1){
+        height: 25vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+        margin: -10rem 0 10rem 0;
+        
+        
+        img{
+            width: 90%;
+            grid-column: 3;
+            margin: -10rem 0 0 12rem;
+            @include animationCircle;
+        }
+    }
+
+    article:nth-child(2){
+        @include displayGrid2;
+        gap: 10rem;
+        color: $secondColor;
+        margin: 0 10rem 10rem 10rem;
+        
+        div:nth-child(2){
+            margin: 0 0 -3rem 0;
+            place-self: start;
+        }
+        
+        div{
+            place-self: end;
+
+            p{
+                font-size: $fontP;
+                font-family: lora,Arial, Helvetica, sans-serif;
+                line-height: 3rem;
+            }
+
+            h1{
+                padding-top: 3rem;
+                line-height: 6.5rem;
+            }
+            
+            h5{
+                padding-top: 3rem;
+            }
+        }
+    
+    }
+
+    article:nth-child(3){
+        @include displayGrid1;
+        height: 65vh;
+       
+        .rose-bear1{
+            justify-self: center;
+            align-self: center;
+            width: 55%;
+            margin: 0 -4rem 0 0;
+            z-index: 1;
+        
+        }
+
+        .rose-bear2{
+            margin: 0 0 0 -14rem;
+        }
+    }   
+}
+
+// =========== Footer Section =========/
+
+footer{
+    background-color: $secondColor;
+    height: 100vh;
+    color: $mainColor;
+    position: relative;
+    overflow: hidden;
+    
+    .stripe{
+        height: 10rem;
+        background-color: $mainColor;
+        position: absolute;
+        top: 16rem;
+        right: -34rem;
+        rotate: 45deg;
+        
+
+        span{
+            @include textStrocke2;
+        }
+
+        h1{
+            color: $secondColor;
+            @include animationMove;
+        }
+    }
+
+    section{
+        margin: $margin;
+    }
+
+    article:nth-child(1){
+        height: 55vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: self-start;
+        
+        h5{
+            margin-bottom: 3rem;
+        }
+
+        p{
+            font-size: $fontP;
+            font-family: lora,Arial, Helvetica, sans-serif;
+            line-height: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        & a:hover{
+            @include btnHover;
+        }
+    }
+
+    article:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 30vh;
+        
+        div:nth-child(1){
+            
+            img{
+                width: 2vw;
+                margin: 5px 1px;
+            }
+
+            h5{
+                margin-bottom: 2rem;
+            }
+        }
+        div:nth-child(2){
+            margin: 0 0 4rem 0;
+            img{
+                width: 8vw;
+                
+            }
+        }
+    }
+}

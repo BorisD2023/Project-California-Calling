@@ -1,0 +1,71 @@
+@mixin star {
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@mixin a-tag{
+    text-decoration: none;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+@mixin displayGrid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin displayGrid2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@mixin displayGrid3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 10vh;
+}
+
+@mixin displayFlex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin btnHover{
+    background-color: $mainColor;
+    color: $secondColor;
+    transition: 500ms ease-in-out
+}
+
+@mixin animationCircle{
+    animation: rotate 6s infinite linear;
+}
+
+@mixin animationMove{
+    animation: move 8s infinite linear;
+}
+
+@mixin fontSizeFamily{
+    font-size: $fontH5;
+    font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+@mixin textStrocke1{
+    color: $secondColor;
+    text-shadow: 0 0 5px $mainColor;
+    // -webkit-text-stroke:2px $mainColor;
+}
+
+@mixin textStrocke2{
+    color: $mainColor;
+    text-shadow: 0 0 5px $secondColor;
+    // -webkit-text-stroke:2px $secondColor;
+}

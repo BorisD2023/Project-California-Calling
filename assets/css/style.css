@@ -1,0 +1,404 @@
+@font-face {
+  font-family: lora;
+  src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: worksans;
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes move {
+  0%, 100% {
+    transform: translateX(-25rem);
+  }
+  50% {
+    transform: translateX(20rem);
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 7.8rem;
+  font-weight: 600;
+  font-family: "lora", Arial, Helvetica, sans-serif;
+}
+h1 span {
+  color: #000;
+  text-shadow: 0 0 5px #fff;
+}
+
+h2 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  font-family: lora, Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url(../img/line.svg) no-repeat center;
+  background-size: cover;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+  color: #fff;
+  margin: 0 10rem;
+  line-height: 7rem;
+}
+header section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+header section:nth-child(2) a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 500ms ease-in-out;
+}
+
+.last-year {
+  min-height: 120rem;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+.last-year article:nth-child(1) {
+  margin: 0 10rem;
+  padding-top: 7rem;
+  width: 55rem;
+}
+.last-year article:nth-child(1) p {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: lora, Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+.last-year article:nth-child(2) {
+  margin: 0 10rem;
+  padding-top: 6rem;
+}
+.last-year article:nth-child(2) .california-text {
+  line-height: 6rem;
+  margin-bottom: 5rem;
+}
+.last-year article:nth-child(2) .california-text p {
+  font-size: 1.6rem;
+}
+.last-year article:nth-child(3) img {
+  position: absolute;
+  max-width: 52%;
+  right: 1%;
+  top: 34%;
+}
+
+.stuck {
+  min-height: 100vh;
+  margin-bottom: 10rem;
+}
+.stuck article:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10vh;
+}
+.stuck article:nth-child(1) img {
+  width: 75%;
+  grid-column: 3;
+  margin: -9rem 0 0 -10rem;
+  z-index: 1;
+}
+.stuck article:nth-child(2) {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.3fr 4fr 1.3fr;
+  margin-bottom: 10rem;
+}
+.stuck article:nth-child(2) .action2 {
+  place-self: start;
+  margin: 4rem 0 0 3rem;
+}
+.stuck article:nth-child(2) .action3 {
+  place-self: end;
+  margin: 0 0 8rem 0;
+}
+.stuck article:nth-child(2) .text-middle {
+  place-self: center;
+  width: 42vw;
+}
+.stuck article:nth-child(2) .text-middle h1 {
+  line-height: 8rem;
+  margin-bottom: 2rem;
+}
+.stuck article:nth-child(2) .text-middle p {
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.stuck article:nth-child(3) {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20rem;
+  margin: 0 15rem;
+  height: 35vh;
+  margin-bottom: 15rem;
+}
+.stuck article:nth-child(3) img:nth-child(1) {
+  place-self: start;
+}
+.stuck article:nth-child(3) img:nth-child(2) {
+  place-self: end;
+}
+.stuck article:nth-child(4) {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 15rem;
+  height: 27vh;
+}
+.stuck article:nth-child(4) div {
+  display: grid;
+  width: 40vw;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.stuck article:nth-child(4) div p {
+  place-self: end;
+}
+.stuck article:nth-child(4) img {
+  place-self: start;
+}
+.stuck article:nth-child(5) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10vh;
+}
+.stuck article:nth-child(5) img {
+  width: 75%;
+  grid-column: 3;
+  margin: 9rem 0 0 -10rem;
+  z-index: 1;
+}
+
+.golden-bear {
+  background-color: #000;
+  min-height: 100vh;
+  margin-bottom: 10rem;
+}
+.golden-bear article:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  height: 70vh;
+  color: #fff;
+  margin: 0 10rem 10rem 10rem;
+}
+.golden-bear article:nth-child(1) div:nth-child(2) {
+  margin: 0 0 -3rem 0;
+}
+.golden-bear article:nth-child(1) div {
+  place-self: end;
+}
+.golden-bear article:nth-child(1) div p {
+  font-size: 3.2rem;
+  font-family: lora, Arial, Helvetica, sans-serif;
+  line-height: 3rem;
+}
+.golden-bear article:nth-child(1) div h1 {
+  padding-top: 3rem;
+  line-height: 6.5rem;
+}
+.golden-bear article:nth-child(1) div h5 {
+  padding-top: 3rem;
+}
+.golden-bear article:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 57vh;
+}
+.golden-bear article:nth-child(2) .bear1 {
+  margin: 2rem 0 0 15rem;
+}
+.golden-bear article:nth-child(2) .bear2 {
+  justify-self: start;
+  align-self: flex-end;
+  width: 55%;
+  margin: 0 0 5rem 7rem;
+  z-index: 1;
+}
+
+.poppy-bear {
+  min-height: 100vh;
+  margin-bottom: 6rem;
+}
+.poppy-bear article:nth-child(1) {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  margin: -10rem 0 10rem 0;
+}
+.poppy-bear article:nth-child(1) img {
+  width: 90%;
+  grid-column: 3;
+  margin: -10rem 0 0 12rem;
+  animation: rotate 6s infinite linear;
+}
+.poppy-bear article:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  color: #000;
+  margin: 0 10rem 10rem 10rem;
+}
+.poppy-bear article:nth-child(2) div:nth-child(2) {
+  margin: 0 0 -3rem 0;
+  place-self: start;
+}
+.poppy-bear article:nth-child(2) div {
+  place-self: end;
+}
+.poppy-bear article:nth-child(2) div p {
+  font-size: 3.2rem;
+  font-family: lora, Arial, Helvetica, sans-serif;
+  line-height: 3rem;
+}
+.poppy-bear article:nth-child(2) div h1 {
+  padding-top: 3rem;
+  line-height: 6.5rem;
+}
+.poppy-bear article:nth-child(2) div h5 {
+  padding-top: 3rem;
+}
+.poppy-bear article:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+}
+.poppy-bear article:nth-child(3) .rose-bear1 {
+  justify-self: center;
+  align-self: center;
+  width: 55%;
+  margin: 0 -4rem 0 0;
+  z-index: 1;
+}
+.poppy-bear article:nth-child(3) .rose-bear2 {
+  margin: 0 0 0 -14rem;
+}
+
+footer {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+footer .stripe {
+  height: 10rem;
+  background-color: #fff;
+  position: absolute;
+  top: 16rem;
+  right: -34rem;
+  rotate: 45deg;
+}
+footer .stripe span {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+footer .stripe h1 {
+  color: #000;
+  animation: move 8s infinite linear;
+}
+footer section {
+  margin: 0 10rem;
+}
+footer article:nth-child(1) {
+  height: 55vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+footer article:nth-child(1) h5 {
+  margin-bottom: 3rem;
+}
+footer article:nth-child(1) p {
+  font-size: 3.2rem;
+  font-family: lora, Arial, Helvetica, sans-serif;
+  line-height: 3rem;
+  margin-bottom: 5rem;
+}
+footer article:nth-child(1) a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 500ms ease-in-out;
+}
+footer article:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 30vh;
+}
+footer article:nth-child(2) div:nth-child(1) img {
+  width: 2vw;
+  margin: 5px 1px;
+}
+footer article:nth-child(2) div:nth-child(1) h5 {
+  margin-bottom: 2rem;
+}
+footer article:nth-child(2) div:nth-child(2) {
+  margin: 0 0 4rem 0;
+}
+footer article:nth-child(2) div:nth-child(2) img {
+  width: 8vw;
+}
+
+/*# sourceMappingURL=style.css.map */
