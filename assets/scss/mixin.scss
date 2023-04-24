@@ -1,3 +1,5 @@
+// General Settings ============/
+
 @mixin star {
     margin: 0%;
     padding: 0%;
@@ -5,15 +7,7 @@
     box-sizing: border-box;
 }
 
-@mixin a-tag{
-    text-decoration: none;
-    color: $mainColor;
-    border: 1px solid $mainColor;
-    padding: 1rem 2rem;
-    font-weight: 500;
-    font-size: 2rem;
-    font-family: worksans, Arial, Helvetica, sans-serif;
-}
+// Display Grid Settings ===============/
 
 @mixin displayGrid1{
     display: grid;
@@ -31,6 +25,8 @@
     height: 10vh;
 }
 
+// Display Flex Stettings ================/
+
 @mixin displayFlex1 {
     display: flex;
     flex-direction: column;
@@ -39,18 +35,34 @@
     text-align: center;
 }
 
+// Button Hover Style ===========/
+
 @mixin btnHover{
     background-color: $mainColor;
     color: $secondColor;
     transition: 500ms ease-in-out
 }
 
+// Animation Effects ==============/
+
 @mixin animationCircle{
     animation: rotate 6s infinite linear;
 }
 
 @mixin animationMove{
-    animation: move 8s infinite linear;
+    animation: move 12s alternate infinite linear;
+}
+
+// Main Style ===================/
+
+@mixin a-tag{
+    text-decoration: none;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: worksans, Arial, Helvetica, sans-serif;
 }
 
 @mixin fontSizeFamily{
@@ -68,4 +80,10 @@
     color: $mainColor;
     text-shadow: 0 0 5px $secondColor;
     // -webkit-text-stroke:2px $secondColor;
+}
+
+@mixin h1Pos{
+    padding-top: 3rem;
+    line-height: 5.2vw;
+    width: 29vw;
 }

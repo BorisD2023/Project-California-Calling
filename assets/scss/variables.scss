@@ -1,8 +1,9 @@
 $mainColor: #fff;
 $secondColor: #000;
-$fontH1: 7.8rem;
-$fontH2: 6.4rem;
-$fontH5: 1.6rem;
-$fontP: 3.2rem;
+$fontH1: clamp(4.8vw, 6.5vw, 8vw);
+$fontH2: clamp(3.8vw, 5vw, 6.4vw);
+$fontH5: clamp(1vw, 1.6vw, 2vw);
+$fontP: clamp(2vw, 2.2vw, 2.6vw);
+$fontP2: clamp(2vw, 4vw, 5vw);
 $margin:0 10rem;
 $fontW:600;

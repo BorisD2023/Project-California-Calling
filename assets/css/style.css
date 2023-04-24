@@ -16,10 +16,10 @@
 }
 @keyframes move {
   0%, 100% {
-    transform: translateX(-25rem);
+    transform: translateX(-100rem);
   }
   50% {
-    transform: translateX(20rem);
+    transform: translateX(5rem);
   }
 }
 * {
@@ -48,9 +48,10 @@ a {
 }
 
 h1 {
-  font-size: 7.8rem;
+  font-size: 6.5vw;
   font-weight: 600;
   font-family: "lora", Arial, Helvetica, sans-serif;
+  width: 50vw;
 }
 h1 span {
   color: #000;
@@ -58,25 +59,23 @@ h1 span {
 }
 
 h2 {
-  font-size: 6.4rem;
+  font-size: 5vw;
   font-weight: 600;
   font-family: lora, Arial, Helvetica, sans-serif;
 }
 
 h5 {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-family: worksans, Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-family: worksans, Arial, Helvetica, sans-serif;
 }
 
 header {
-  background: url(../img/line.svg) no-repeat center;
-  background-size: cover;
   background-color: #000;
   min-height: 100vh;
   display: flex;
@@ -92,7 +91,13 @@ header section:nth-child(1) {
   height: 40rem;
   color: #fff;
   margin: 0 10rem;
-  line-height: 7rem;
+  line-height: 5.5vw;
+}
+header section:nth-child(1) div {
+  border-right: 1px solid gray;
+  height: 20vw;
+  position: absolute;
+  top: 0%;
 }
 header section:nth-child(2) {
   display: flex;
@@ -118,7 +123,7 @@ header section:nth-child(2) a:hover {
   width: 55rem;
 }
 .last-year article:nth-child(1) p {
-  font-size: 5rem;
+  font-size: 4vw;
   font-weight: 600;
   font-family: lora, Arial, Helvetica, sans-serif;
   position: relative;
@@ -129,17 +134,17 @@ header section:nth-child(2) a:hover {
   padding-top: 6rem;
 }
 .last-year article:nth-child(2) .california-text {
-  line-height: 6rem;
+  line-height: 5vw;
   margin-bottom: 5rem;
 }
 .last-year article:nth-child(2) .california-text p {
-  font-size: 1.6rem;
+  font-size: 1.6vw;
 }
 .last-year article:nth-child(3) img {
   position: absolute;
   max-width: 52%;
   right: 1%;
-  top: 34%;
+  top: 54vw;
 }
 
 .stuck {
@@ -176,11 +181,11 @@ header section:nth-child(2) a:hover {
   width: 42vw;
 }
 .stuck article:nth-child(2) .text-middle h1 {
-  line-height: 8rem;
+  line-height: 6vw;
   margin-bottom: 2rem;
 }
 .stuck article:nth-child(2) .text-middle p {
-  line-height: 2.5rem;
+  line-height: 2.5vw;
   font-weight: 600;
 }
 .stuck article:nth-child(3) {
@@ -206,7 +211,7 @@ header section:nth-child(2) a:hover {
 .stuck article:nth-child(4) div {
   display: grid;
   width: 40vw;
-  line-height: 2.5rem;
+  line-height: 2.5vw;
   font-weight: 600;
 }
 .stuck article:nth-child(4) div p {
@@ -247,13 +252,14 @@ header section:nth-child(2) a:hover {
   place-self: end;
 }
 .golden-bear article:nth-child(1) div p {
-  font-size: 3.2rem;
+  font-size: 2.2vw;
   font-family: lora, Arial, Helvetica, sans-serif;
-  line-height: 3rem;
+  line-height: 3vw;
 }
 .golden-bear article:nth-child(1) div h1 {
   padding-top: 3rem;
-  line-height: 6.5rem;
+  line-height: 5.2vw;
+  width: 29vw;
 }
 .golden-bear article:nth-child(1) div h5 {
   padding-top: 3rem;
@@ -279,7 +285,7 @@ header section:nth-child(2) a:hover {
   margin-bottom: 6rem;
 }
 .poppy-bear article:nth-child(1) {
-  height: 25vh;
+  height: 34vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
@@ -306,13 +312,14 @@ header section:nth-child(2) a:hover {
   place-self: end;
 }
 .poppy-bear article:nth-child(2) div p {
-  font-size: 3.2rem;
+  font-size: 2.2vw;
   font-family: lora, Arial, Helvetica, sans-serif;
-  line-height: 3rem;
+  line-height: 3vw;
 }
 .poppy-bear article:nth-child(2) div h1 {
   padding-top: 3rem;
-  line-height: 6.5rem;
+  line-height: 5.2vw;
+  width: 29vw;
 }
 .poppy-bear article:nth-child(2) div h5 {
   padding-top: 3rem;
@@ -341,7 +348,8 @@ footer {
   overflow: hidden;
 }
 footer .stripe {
-  height: 10rem;
+  height: 12rem;
+  width: 100vw;
   background-color: #fff;
   position: absolute;
   top: 16rem;
@@ -354,7 +362,8 @@ footer .stripe span {
 }
 footer .stripe h1 {
   color: #000;
-  animation: move 8s infinite linear;
+  animation: move 12s alternate infinite linear;
+  white-space: nowrap;
 }
 footer section {
   margin: 0 10rem;
@@ -371,9 +380,9 @@ footer article:nth-child(1) h5 {
   margin-bottom: 3rem;
 }
 footer article:nth-child(1) p {
-  font-size: 3.2rem;
+  font-size: 2.2vw;
   font-family: lora, Arial, Helvetica, sans-serif;
-  line-height: 3rem;
+  line-height: 4vw;
   margin-bottom: 5rem;
 }
 footer article:nth-child(1) a:hover {
@@ -399,6 +408,192 @@ footer article:nth-child(2) div:nth-child(2) {
 }
 footer article:nth-child(2) div:nth-child(2) img {
   width: 8vw;
+}
+
+@media only screen and (min-width: 1300px) {
+  .last-year article:nth-child(3) img {
+    right: 0%;
+    top: 19%;
+  }
+  .stuck article:nth-child(1) img {
+    margin: -11rem 0 0 -10rem;
+  }
+  .stuck article:nth-child(3) {
+    height: 45vh;
+  }
+  .golden-bear article:nth-child(2) {
+    height: 75vh;
+  }
+  .poppy-bear article:nth-child(1) img {
+    margin: -13rem 0 0 16rem;
+  }
+  article:nth-child(2) div:nth-child(2) {
+    place-self: end;
+  }
+  article:nth-child(3) {
+    height: 80vh;
+  }
+  article:nth-child(3) .rose-bear1 {
+    margin: 0px -15rem 0 0;
+  }
+  article:nth-child(3) .rose-bear2 {
+    margin: 0px 0 0 -20rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .last-year {
+    min-height: 100vh;
+  }
+  .stuck article:nth-child(1) img {
+    width: 45vw;
+    margin: -8rem 0 0 -12rem;
+  }
+  .stuck article:nth-child(2) {
+    grid-template-columns: 1.3fr 2fr 1.3fr;
+  }
+  .stuck article:nth-child(3) {
+    grid-template-columns: 1fr 1fr;
+    gap: 9rem;
+    margin: 0 9rem;
+    height: 23vh;
+    margin-bottom: 15rem;
+  }
+  .stuck article:nth-child(4) {
+    grid-template-columns: 2fr 4fr;
+    gap: 9rem;
+  }
+  .stuck article:nth-child(5) img {
+    width: 100%;
+    margin: 12rem 0 0 -14rem;
+  }
+  .golden-bear article:nth-child(1) {
+    gap: 9rem;
+    height: 50vh;
+  }
+  .golden-bear article:nth-child(2) {
+    height: 40vh;
+  }
+  .golden-bear article:nth-child(2) .bear1 {
+    margin: 8rem 0 0 12rem;
+  }
+  .golden-bear article:nth-child(2) .bear2 {
+    margin: 0 0 4rem 7rem;
+  }
+  .poppy-bear {
+    margin-bottom: 0;
+  }
+  .poppy-bear article:nth-child(1) {
+    height: 15vh;
+  }
+  .poppy-bear article:nth-child(1) img {
+    margin: -9rem 0 0 9rem;
+  }
+  .poppy-bear article:nth-child(3) {
+    height: 37vh;
+  }
+  .poppy-bear article:nth-child(3) .rose-bear2 {
+    margin: 0 0 0 -11rem;
+  }
+  footer .stripe {
+    height: 7rem;
+    width: 120vw;
+    top: 23rem;
+    right: -40rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header section:nth-child(1) {
+    height: 20rem;
+  }
+  .last-year article:nth-child(1) {
+    width: 50vw;
+  }
+  .last-year article:nth-child(3) img {
+    top: 50rem;
+    right: 23%;
+  }
+  .stuck article:nth-child(1) img {
+    margin: -5rem 0 0 -5rem;
+  }
+  .stuck article:nth-child(2) {
+    max-width: 120vw;
+    height: 60vh;
+    grid-template-columns: 1.3fr 2fr 1.3fr;
+    margin-bottom: 5rem;
+  }
+  .stuck article:nth-child(3) {
+    gap: 4rem;
+    margin: 0 6rem;
+    height: 17vh;
+    margin-bottom: 12rem;
+  }
+  .stuck article:nth-child(4) {
+    height: 18vh;
+  }
+  .stuck article:nth-child(4) div {
+    width: 35vw;
+  }
+  .stuck article:nth-child(5) img {
+    margin: 14rem 0 0 -5rem;
+  }
+  .golden-bear {
+    min-height: 70vh;
+    margin-bottom: 0;
+  }
+  .golden-bear article:nth-child(1) {
+    gap: 5rem;
+    margin: 0px 5rem 0 5rem;
+  }
+  .golden-bear article:nth-child(1) div {
+    place-self: center;
+  }
+  .golden-bear article:nth-child(2) {
+    height: 20vh;
+  }
+  .golden-bear article:nth-child(2) .bear1 {
+    margin: 0rem 0 0 6rem;
+  }
+  .golden-bear article:nth-child(2) .bear2 {
+    margin: 0 0 2rem 3rem;
+  }
+  .poppy-bear {
+    margin-bottom: 0;
+    min-height: 95vh;
+  }
+  .poppy-bear article:nth-child(1) {
+    height: 20vh;
+  }
+  .poppy-bear article:nth-child(1) img {
+    margin: 6rem 0 0 5rem;
+  }
+  .poppy-bear article:nth-child(2) {
+    gap: 5rem;
+    margin: 0rem 5rem 10rem 5rem;
+  }
+  .poppy-bear article:nth-child(2) div {
+    place-self: start;
+  }
+  .poppy-bear article:nth-child(3) .rose-bear1 {
+    margin: 0 0 12rem 3rem;
+  }
+  .poppy-bear article:nth-child(3) .rose-bear2 {
+    margin: 0 0 0 -6rem;
+  }
+  footer .stripe {
+    height: 3.5rem;
+    width: 100vw;
+    top: 9rem;
+    right: -12rem;
+  }
+  footer section {
+    margin: 0 5rem;
+  }
+  footer article:nth-child(1) {
+    height: 50vh;
+  }
+  footer article:nth-child(2) {
+    height: 20vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

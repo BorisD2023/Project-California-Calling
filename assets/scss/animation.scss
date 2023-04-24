@@ -10,12 +10,10 @@
 
 @keyframes move {
     0%,100%{
-        transform: translateX(-25rem);
+        transform: translateX(-100rem);
     }
 
     50%{
-        transform: translateX(20rem);
+        transform: translateX(5rem);
     }
-
-   
 }
