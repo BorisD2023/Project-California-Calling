@@ -1,0 +1,43 @@
+# Bootcamp Exercise - Californa Calling
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Redesign a Figma Prototype
+- Build two animations with keyframes
+
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Solution URL: []
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SASS/SCSS
+- Grid
+- Flexbox
+- Animations CSS, Keyframes
+
+### What I learned
+
+How to build a complete Landingpage with SCSS.
